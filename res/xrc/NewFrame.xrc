@@ -54,6 +54,7 @@
 		<object class="wxStatusBar" name="ID_StatusBar">
 			<fields>1</fields>
 			<widths>-10</widths>
+			<text>I am here</text>
 			<styles>wxSB_NORMAL</styles>
 		</object>
 	</object>

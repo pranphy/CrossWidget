@@ -1,4 +1,5 @@
 *.cbp
+*.swp
 *.o
 */*/*.o
 *.depend
