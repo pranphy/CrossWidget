@@ -1,5 +1,9 @@
+obj
+bin
+
 *.cbp
 *.swp
+*~
 *.o
 */*/*.o
 *.depend

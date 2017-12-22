@@ -26,9 +26,9 @@ bool HolaApp::OnInit()
     wxsOK = wxsOK && wxXmlResource::Get()->Load(_T("res/xrc/NewFrame.xrc"));
     if ( wxsOK )
     {
-    NewFrame* Frame = new NewFrame(0);
-    Frame->Show();
-    SetTopWindow(Frame);
+        NewFrame* Frame = new NewFrame(0);
+        Frame->Show();
+        SetTopWindow(Frame);
     }
     //*)
     return wxsOK;

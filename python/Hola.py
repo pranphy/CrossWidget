@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import wx
 from wx import xrc
 
@@ -21,17 +21,16 @@ class MyApp(wx.App):
         self.Frame.Show()
      
     def OnButtonOneClick(self,evt):
-		openFileDialog = wx.FileDialog(self.Frame, "Open XYZ file", "", "","XYZ files (*.xyz)|*.xyz", wx.FD_OPEN | wx.FD_FILE_MUST_EXIST)
-
-		if openFileDialog.ShowModal() == wx.ID_CANCEL:
-			return     # the user changed idea...
+        openFileDialog = wx.FileDialog(self.Frame, "Open Image file", "", "","JPG files (*.jpg)|*.jpg", wx.FD_OPEN | wx.FD_FILE_MUST_EXIST)
+        if openFileDialog.ShowModal() == wx.ID_CANCEL:
+            return     # the user changed idea...
 
         # proceed loading the file chosen by the user
         # this can be done with e.g. wxPython input streams:
-		input_stream = wx.FileInputStream(openFileDialog.GetPath())
-		if not input_stream.IsOk():
-			wx.LogError("Cannot open file '%s'."%openFileDialog.GetPath())
-			return
+        input_stream = wx.FileInputStream(openFileDialog.GetPath())
+        if not input_stream.IsOk():
+            wx.LogError("Cannot open file '%s'."%openFileDialog.GetPath())
+            return
 			
 
 if __name__ == '__main__':
